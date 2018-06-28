@@ -12,7 +12,7 @@ class EmailParser
     email_list = emails.split(", ")
     @emails = []
     email_list.each {|email| @emails << email if !@emails.include?(email)}
-    binding.pry
+    self
   end
 
   def parse
