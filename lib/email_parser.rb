@@ -11,6 +11,5 @@ class EmailParser
 
   def initialize(emails)
     email_list = emails.split(", ")
-    binding.pry
   end
 end
