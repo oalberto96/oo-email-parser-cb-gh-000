@@ -10,7 +10,7 @@ class EmailParser
 
   def initialize(emails)
 
-    email_list = emils.include?(",") ? emails.split(", ") : emails.split(" ")
+    email_list = emails.include?(",") ? emails.split(", ") : emails.split(" ")
     @emails = []
     email_list.each {|email| (@emails << email) if !@emails.include?(email)}
     return @emails
