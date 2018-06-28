@@ -7,9 +7,12 @@ require 'pry'
 
 class EmailParser
   attr_accessor :name
-  @@all = []
 
   def initialize(emails)
     email_list = emails.split(", ")
+  end
+
+  def parse
+    @@a;;
   end
 end
