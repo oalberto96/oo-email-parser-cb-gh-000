@@ -6,10 +6,13 @@ require 'pry'
 
 
 class EmailParser
-  attr_accessor :name
+  attr_accessor :name, :emails 
 
   def initialize(emails)
     email_list = emails.split(", ")
+    email_list.each {|email| @emails << email if !@emails.include?(email)}
+    @emails
+    
   end
 
   def parse
