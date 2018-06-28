@@ -15,6 +15,4 @@ class EmailParser
     return @emails
   end
 
-  def parse
-  end
 end
