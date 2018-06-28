@@ -11,7 +11,7 @@ class EmailParser
   def initialize(emails)
     email_list = emails.split(", ")
     @emails = []
-    email_list.each {|email| @emails << email if !@emails.include?(email)}
+    email_list.each {|email| (@emails << email) if !@emails.include?(email)}
     @emails
     binding.pry
   end
