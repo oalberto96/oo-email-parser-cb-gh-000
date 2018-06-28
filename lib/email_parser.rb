@@ -7,7 +7,7 @@ class EmailParser
   @@all = []
 
   def initialize(email_list)
-    email_list.split(", ").strip
+    email_list.split(", ")
     puts email_list
   end
 end
