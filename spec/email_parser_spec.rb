@@ -2,6 +2,7 @@ describe "EmailParser" do
   describe '#parse' do
     it "parses CSV emails" do
       expect(EmailParser.new("avi@test.com, arel@test.com").parse).to eq(["avi@test.com", "arel@test.com"])
+      binding.pry
     end
 
     it "parses space delimited emails" do
